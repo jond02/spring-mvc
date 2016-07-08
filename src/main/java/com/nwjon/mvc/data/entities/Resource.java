@@ -1,6 +1,8 @@
 package com.nwjon.mvc.data.entities;
 
 import java.math.BigDecimal;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Resource {
 
@@ -13,6 +15,16 @@ public class Resource {
 	private BigDecimal cost;
 
 	private String unitOfMeasure;
+
+	private ArrayList<String> indicators;
+
+	public ArrayList<String> getIndicators() {
+		return indicators;
+	}
+
+	public void setIndicators(ArrayList<String> indicators) {
+		this.indicators = indicators;
+	}
 
 	public Long getResourceId() {
 		return resourceId;
