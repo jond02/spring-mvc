@@ -44,7 +44,7 @@ public class ResourceController {
         model.addAttribute("checkOptions", checks);
         model.addAttribute("typeOptions", options);
 
-        System.out.println(resource.getName());
+        System.out.println(resource.toString());
         System.out.println("invoking the save method");
         return "resource_add";
     }

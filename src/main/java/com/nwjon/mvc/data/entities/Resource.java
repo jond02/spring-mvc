@@ -1,8 +1,7 @@
 package com.nwjon.mvc.data.entities;
 
 import java.math.BigDecimal;
-import java.util.ArrayList;
-import java.util.List;
+import java.util.Arrays;
 
 public class Resource {
 
@@ -16,13 +15,23 @@ public class Resource {
 
 	private String unitOfMeasure;
 
-	private ArrayList<String> indicators;
+	private String[] indicators;
 
-	public ArrayList<String> getIndicators() {
+	private String notes;
+
+	public String getNotes() {
+		return notes;
+	}
+
+	public void setNotes(String notes) {
+		this.notes = notes;
+	}
+
+	public String[] getIndicators() {
 		return indicators;
 	}
 
-	public void setIndicators(ArrayList<String> indicators) {
+	public void setIndicators(String[] indicators) {
 		this.indicators = indicators;
 	}
 
@@ -68,9 +77,7 @@ public class Resource {
 
 	@Override
 	public String toString() {
-		return "Resource [resourceId=" + resourceId + ", name=" + name
-				+ ", type=" + type + ", cost=" + cost + ", unitOfMeasure="
-				+ unitOfMeasure + "]";
+		return new StringBuilder().append("Resource{").append("resourceId=").append(resourceId).append(", name='").append(name).append('\'').append(", type='").append(type).append('\'').append(", cost=").append(cost).append(", unitOfMeasure='").append(unitOfMeasure).append('\'').append(", indicators=").append(Arrays.toString(indicators)).append(", notes='").append(notes).append('\'').append('}').toString();
 	}
 
 }

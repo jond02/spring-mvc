@@ -58,6 +58,11 @@
 
 					<form:checkboxes id="indicators" path="indicators" items="${checkOptions}" />
 				</div>
+
+				<div class="form-group">
+					<label for="notes">Note</label>
+					<form:textarea path="notes" id="notes" cssClass="form-control" rows="3" />
+				</div>
 				
 				<button type="submit" class="btn btn-default">Submit</button>
 
