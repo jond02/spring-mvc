@@ -1,6 +1,6 @@
 package com.nwjon.mvc.controllers;
 
-import data.entities.Project;
+import com.nwjon.mvc.data.entities.Project;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;

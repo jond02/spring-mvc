@@ -1,10 +1,10 @@
-package data.entities;
+package com.nwjon.mvc.data.entities;
 
 import java.math.BigDecimal;
 
 public class Project {
 
-	private Long projectId;
+	private int projectId;
 
 	private String name;
 
@@ -22,11 +22,11 @@ public class Project {
 
 	private String type;
 
-	public Long getProjectId() {
+	public int getProjectId() {
 		return projectId;
 	}
 
-	public void setProjectId(Long projectId) {
+	public void setProjectId(int projectId) {
 		this.projectId = projectId;
 	}
 
