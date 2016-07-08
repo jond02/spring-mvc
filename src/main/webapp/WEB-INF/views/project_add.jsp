@@ -48,17 +48,17 @@
 				<div class="form-group">
 					<label for="funds">Authorized Funds</label>
 					<input id="funds" type="text"
-						class="form-control" name="authorized_funds"/>
+						class="form-control" name="authorizedFunds"/>
 				</div>
 			
 				<div class="form-group">
 					<label for="hours">Authorized Hours</label>
 					<input id="hours" type="text"
-						class="form-control" name="authorized_hours"/>
+						class="form-control" name="authorizedHours"/>
 				</div>
 			
 				<div class="form-group">
-					<label for="project-name">Description</label>
+					<label for="projectName">Description</label>
 					<textarea class="form-control" rows="3"></textarea>
 				</div>
 				

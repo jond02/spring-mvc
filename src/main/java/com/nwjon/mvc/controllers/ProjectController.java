@@ -1,13 +1,11 @@
 package com.nwjon.mvc.controllers;
 
+import com.nwjon.mvc.data.entities.Project;
 import com.nwjon.mvc.data.service.ProjectService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
@@ -45,24 +43,11 @@ public class ProjectController {
     }
 
     @RequestMapping(value = "/add", method = RequestMethod.POST)
-    public String saveProject(@RequestParam("name") String name, HttpServletRequest request, HttpSession session){
-        System.out.println(session.getAttribute("token"));
-        System.out.println(request.getParameter("name"));
-        System.out.println(name);
-        System.out.println("invoking saveProject");
+    public String saveProject(@ModelAttribute Project project){
 
-        return "project_add";
-    }
 
-    @RequestMapping(value = "/add", method = RequestMethod.POST, params = {"type=multi"})
-    public String saveMultiYearProject(){
-        System.out.println("invoking multiYearProject");
-        return "project_add";
-    }
+        System.out.println(project.getName());
 
-    @RequestMapping(value = "/add", method = RequestMethod.POST, params = {"type=multi", "special"})
-    public String saveSpecialProject(){
-        System.out.println("invoking Special Project");
         return "project_add";
     }
 }
