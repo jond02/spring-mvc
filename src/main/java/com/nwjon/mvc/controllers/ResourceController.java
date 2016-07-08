@@ -1,5 +1,6 @@
 package com.nwjon.mvc.controllers;
 
+import com.nwjon.mvc.data.entities.Resource;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -14,6 +15,7 @@ public class ResourceController {
 
     @RequestMapping("/add")
     public String add(Model model){
+        model.addAttribute("resource", new Resource());
         return "resource_add";
     }
 
