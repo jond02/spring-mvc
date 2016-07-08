@@ -8,7 +8,7 @@
     		
     		<ul class="nav navbar-nav">
     		
-    			<li><a href="#">Home</a></li>
+    			<li><a href="<spring:url value="/"/>">Home</a></li>
     		
     			<li class="dropdown">
           			
@@ -30,7 +30,7 @@
           				aria-expanded="false">Resources <span class="caret"></span></a>
           		
           			<ul class="dropdown-menu" role="menu">
-            			<li><a href="#">Add</a></li>
+            			<li><a href="<spring:url value="/resource/add"/>">Add</a></li>
             			<li><a href="#">Find</a></li>
           			</ul>
         		
