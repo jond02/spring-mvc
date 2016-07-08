@@ -7,6 +7,10 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
 
 /**
  * Created by jondann on 7/5/16.
@@ -34,14 +38,19 @@ public class ProjectController {
 
 
     @RequestMapping(value = "/add", method = RequestMethod.GET)
-    public String addProject(){
+    public String addProject(HttpSession session){
+        session.setAttribute("token", "12345");
         System.out.println("invoking addProject");
         return "project_add";
     }
 
     @RequestMapping(value = "/add", method = RequestMethod.POST)
-    public String saveProject(){
+    public String saveProject(@RequestParam("name") String name, HttpServletRequest request, HttpSession session){
+        System.out.println(session.getAttribute("token"));
+        System.out.println(request.getParameter("name"));
+        System.out.println(name);
         System.out.println("invoking saveProject");
+
         return "project_add";
     }
 
