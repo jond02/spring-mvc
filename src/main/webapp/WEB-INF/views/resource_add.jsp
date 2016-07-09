@@ -26,7 +26,7 @@
 		</div>
 
 			<spring:url value="/resource/save" var="formUrl" />
-			<form:form method="post" action="${formUrl}" modelAttribute="project">
+			<form:form method="post" action="${formUrl}" modelAttribute="resource">
 
 			<div class="row">
 				
