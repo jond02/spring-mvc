@@ -4,13 +4,13 @@ import java.math.BigDecimal;
 
 public class Project {
 
-	private int projectId;
+	private long projectId;
 
 	private String name;
 
 	private String description;
 
-	private String sponsor;
+	private Sponsor sponsor;
 
 	private BigDecimal authorizedHours;
 
@@ -22,11 +22,11 @@ public class Project {
 
 	private String type;
 
-	public int getProjectId() {
+	public long getProjectId() {
 		return projectId;
 	}
 
-	public void setProjectId(int projectId) {
+	public void setProjectId(long projectId) {
 		this.projectId = projectId;
 	}
 
@@ -70,11 +70,11 @@ public class Project {
 		this.year = year;
 	}
 
-	public String getSponsor() {
+	public Sponsor getSponsor() {
 		return sponsor;
 	}
 
-	public void setSponsor(String sponsor) {
+	public void setSponsor(Sponsor sponsor) {
 		this.sponsor = sponsor;
 	}
 

@@ -15,13 +15,14 @@ public class HomeModel {
     @RequestMapping("/home-model")
     public String goHomeModel(Model model){
 
+        /*
         Project project = new Project();
         project.setName("First Time Project");
         project.setSponsor("Home Builders");
         project.setDescription("We like to build houses!");
 
         model.addAttribute("currentProject", project);
-
+            */
         return "home-model";
     }
 }

@@ -26,7 +26,7 @@
 		</div>
 
 			<spring:url value="/resource/save" var="formUrl" />
-			<form:form method="post" action="${formUrl}" modelAttribute="resource">
+			<form:form method="post" action="${formUrl}" modelAttribute="project">
 
 			<div class="row">
 				
@@ -36,26 +36,24 @@
 				</div>
 
 				<div class="form-group">
-					<label for="resource-type">Type</label> 
-
+					<label for="resource-type">Type</label>
 					<form:select id="resource-type" path="type" items="${typeOptions}" cssClass="selectpicker"/>
-
 				</div>
 
+
+
 				<div class="form-group">
-					<label for="cost">Cost</label> <input id="cost" type="text"
-						class="form-control" name="cost" />
+					<label for="cost">Cost</label>
+					<input id="cost" type="text" class="form-control" name="cost" />
 				</div>
 
 				<div class="form-group">
 					<label for="unit">Unit of Measure</label>
-
 					<form:radiobuttons id="unit" path="unitOfMeasure" items="${radioOptions}" />
 				</div>
 
 				<div class="form-group">
 					<label for="indicators">Unit of Measure</label>
-
 					<form:checkboxes id="indicators" path="indicators" items="${checkOptions}" />
 				</div>
 

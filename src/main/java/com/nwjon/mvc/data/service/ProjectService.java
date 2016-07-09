@@ -24,11 +24,11 @@ public class ProjectService {
 			return this.projects;
 		}
 		
-		public Project find(int projectId){
+		public Project find(long projectId){
 			return this.projects.stream().filter(i -> i.getProjectId() == projectId).collect(Collectors.toList()).get(0);
 		}
 
-		private Project createProject(String title, String description, int projectId) {
+		private Project createProject(String title, String description, long projectId) {
 			Project project = new Project();
 			project.setProjectId(projectId);
 			project.setName(title);
