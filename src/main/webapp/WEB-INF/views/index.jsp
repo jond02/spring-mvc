@@ -9,9 +9,9 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
     <link rel="stylesheet" href="<spring:url value="/resources/css/index.css"/>" type="text/css"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 
 <style>
-
     body{
         background: #1F1F1F url("<spring:url value="/resources/img/pattern.png"/>") repeat top left;
         color:#fff;
@@ -19,20 +19,15 @@
     }
 </style>
 
-
-    <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>-->
-
-
-
 </head>
 <body>
 
 <div class="container">
     <div class="row headerRow">
-        <div class="col-lg-2">
+        <div class="col-lg-2 col-md-3 col-sm-3 col-xs-4">
             <img src="<spring:url value="/resources/img/rei-logo-sm-white.png"/>">
         </div>
-        <div class="col-lg-10">
+        <div class="col-lg-10 col-md-9 col-sm-9 col-xs-8">
             <h1 class="MarketingTech">Marketing Tech</h1>
         </div>
     </div>
@@ -41,13 +36,16 @@
         <div class="appSubBox col-lg-6">
             <div class="apps col-lg-10 col-lg-offset-1">
                 <p class="appsTitle">Apps</p>
-                <div class="mtItem">
-                    <!--<div style="background-image: url('<spring:url value="/resources/img/tiles.jpeg"/>');"></div>-->
-                    <div>
-                        <span class="glyphicon glyphicon-envelope" />
+
+                <a href="<spring:url value="/apps/vendormail" />">
+                    <div class="mtItem">
+                        <div>
+                            <span class="glyphicon glyphicon-envelope" />
+                        </div>
+                        <p>VendorMail</p>
                     </div>
-                    <p>VendorMail</p>
-                </div>
+                </a>
+
                 <div class="mtItem">
                     <div>
                         <span class="glyphicon glyphicon-th-list" />

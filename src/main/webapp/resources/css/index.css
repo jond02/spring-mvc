@@ -28,6 +28,8 @@
     margin-top: 1em;
     border: 6px solid white;
     border-radius: 5px;
+    background-color: rgba(43, 43, 43, 0.4);
+    box-shadow: 0 0 5px black;
 }
 
 .apps, .reports {
@@ -36,12 +38,12 @@
     margin-top: 44px;
     padding: 0;
     border-radius: 5px;
-
+    box-shadow: 0 0 5px black;
 }
 
 .appsTitle {
     width: 100%;
-    color: white;
+    color: rgb(43, 43, 43);
     background-color: #a7c900;
     font-size: 200%;
     padding: 0.1em 0 0.2em 0.5em;
@@ -83,31 +85,31 @@
     margin-top: 4px;
 }
 
-/*
-.apps .mtItem:nth-child(2) div {
-    background-position: 0 0;
+/*==========  Non-Mobile First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+    .appSelectBox {
+        height: 1200px;
+    }
 }
 
-.apps .mtItem:nth-child(3) div  {
-    background-position: 0 -45px;
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+
 }
 
-.apps .mtItem:nth-child(4) div  {
-    background-position: 0 -90px;
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+
 }
 
-.apps .mtItem:nth-child(5) div  {
-    background-position: 0 -135px;
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+
 }
 
-.reports .mtItem:nth-child(2) div {
-    background-position: -45px 0;
-}
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
 
-.reports .mtItem:nth-child(3) div  {
-    background-position: -45px -45px;
 }
-*/
-
-/* Medium devices (desktops, 992px and up) */
-@media (min-width: @screen-md-min) { ... }
