@@ -1,0 +1,113 @@
+@font-face {
+    font-family: "Anderson 1938";
+    font-style: normal;
+    font-weight: 400;
+    src: url("//satchel.rei.com/media/font/anderson_1938-webfont.eot?#iefix") format("embedded-opentype"), url("//satchel.rei.com/media/font/anderson_1938-webfont.woff") format("woff"), url("//satchel.rei.com/media/font/anderson_1938-webfont.ttf") format("truetype"), url("//satchel.rei.com/media/font/anderson_1938-webfont.svg#webfont") format("svg");
+}
+
+.MarketingTech {
+    margin-left: 1em;
+    color: white;
+    font-size: 400%;
+}
+
+.headerRow {
+    margin-top: 2em;
+    width: 100%;
+}
+
+/*
+.row {
+    border: 1px solid red;
+}
+*/
+
+.appSelectBox {
+    height: 600px;
+    width: 100%;
+    margin-top: 1em;
+    border: 6px solid white;
+    border-radius: 5px;
+}
+
+.apps, .reports {
+    border: 4px solid white;
+    height: 500px;
+    margin-top: 44px;
+    padding: 0;
+    border-radius: 5px;
+
+}
+
+.appsTitle {
+    width: 100%;
+    color: white;
+    background-color: #a7c900;
+    font-size: 200%;
+    padding: 0.1em 0 0.2em 0.5em;
+}
+
+.mtItem {
+    width: 90%;
+    border: 2px solid white;
+    height: 2em;
+    margin: 1em auto;
+    color: white;
+    font-size: 210%;
+    border-radius: 5px;
+    transition: color 0.2s, background-color 0.2s;
+
+}
+
+.mtItem p {
+    margin-top: 0.15em;
+    float: left;
+    margin-left: 0.5em;
+}
+
+.mtItem:hover {
+    color: #a7c900;
+    background-color: rgba(43, 43, 43, 0.7);
+}
+
+.mtItem div {
+    height: 45px;
+    width: 45px;
+    float: left;
+    margin: 5px 0 0 5px;
+    text-align: center;
+}
+
+.glyphicon {
+    font-size: 115%;
+    margin-top: 4px;
+}
+
+/*
+.apps .mtItem:nth-child(2) div {
+    background-position: 0 0;
+}
+
+.apps .mtItem:nth-child(3) div  {
+    background-position: 0 -45px;
+}
+
+.apps .mtItem:nth-child(4) div  {
+    background-position: 0 -90px;
+}
+
+.apps .mtItem:nth-child(5) div  {
+    background-position: 0 -135px;
+}
+
+.reports .mtItem:nth-child(2) div {
+    background-position: -45px 0;
+}
+
+.reports .mtItem:nth-child(3) div  {
+    background-position: -45px -45px;
+}
+*/
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: @screen-md-min) { ... }

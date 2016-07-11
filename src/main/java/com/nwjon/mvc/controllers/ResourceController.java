@@ -25,6 +25,12 @@ public class ResourceController {
 		System.out.println("Adding a new resource to the model");
 		return new Resource();
 	}
+
+	@RequestMapping("/save")
+	public String save(@ModelAttribute Resource resource) {
+		System.out.println(resource);
+		return "redirect:/resource/add";
+	}
 	
 	@ModelAttribute("typeOptions")
 	public List<String> getTypes(){
@@ -45,10 +51,5 @@ public class ResourceController {
 				"Lead Time", "Special Rate", "Requires Approval"	
 			}));
 	}
-	
-	@RequestMapping("/save")
-	public String save(@ModelAttribute Resource resource) {
-		System.out.println(resource);
-		return "redirect:/resource/add";
-	}
+
 }
